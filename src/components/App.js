@@ -9,9 +9,31 @@ function App() {
 
   return (
     <div className="App">
-      <MovieCard title={title} genres={genresArr} />
+      <MovieCard title={title} posterSrc={posterURL} genres={genresArr} />
     </div>
   );
 }
+
+// function App() {
+//   const socialLinks = {
+//     github: "https://github.com/liza",
+//     linkedin: "https://www.linkedin.com/in/liza/",
+//   };
+
+//   return (
+//     <div>
+//       <SocialMedia socialLinks={socialLinks} />
+//     </div>
+//   );
+// }
+
+// function SocialMedia({ socialLinks : {github, linkedin} }) {
+//   return (
+//     <div>
+//       <a href={github}>{github}</a>
+//       <a href={linkedin}>{linkedin}</a>
+//     </div>
+//   );
+// }
 
 export default App;
